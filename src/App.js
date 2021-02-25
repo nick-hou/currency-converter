@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 function App() {
   const [currencyData, setCurrencyData] = useState([]);
 
-  const APIurl = 'http://data.fixer.io/api/latest?access_key=' + process.env.apiKey;
+  const APIurl = 'http://data.fixer.io/api/latest?access_key=' + process.env.REACT_APP_API_KEY;
 
   fetch(APIurl)
   .then(res => res.json())
